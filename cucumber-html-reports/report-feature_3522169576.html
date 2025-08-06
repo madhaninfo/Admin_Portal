@@ -1,0 +1,3630 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: src/test/java/Admin_Login/Admin_otp/AdminOtp.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Admin_V3_API</td>
+      <td>31 Jul 2025, 15:29</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">src/test/java/Admin_Login/Admin_otp/AdminOtp.feature</td>
+          <td      class="passed"    >76</td>
+          <td      class="failed"    >1</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">77</td>
+
+          <td  class="passed"    >10</td>
+          <td  class="failed"    >1</td>
+          <td class="total">11</td>
+
+          <td class="duration" data-value="4429661546">4.429</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">src/test/java/Admin_Login/Admin_otp/AdminOtp.feature</span>
+
+
+</div>
+
+        <div class="description indention">UpdateBussiness API</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.730</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">1valid otp code</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestData = karate.read('classpath:Admin_Login/Admin_otp/Graphql/AdminOtp.json')</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>15:29:08.759 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestData</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.718</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>15:29:08.772 request:
+1 &gt; POST https://sbadminv3.mzapi.mezzofy.com/iam
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 353
+1 &gt; Host: sbadminv3.mzapi.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;mutation AdminLogin($input: AdminLoginInput!) { AdminLogin(input: $input) { success message developerMessage result { userData { platformRoleId platformUserId platformUserStatus userId userName userEmail userStatus menus { menuId menuName } } } } }&quot;,&quot;variables&quot;:{&quot;input&quot;:{&quot;platformuserId&quot;:&quot;PUSR027P2XWVX8EJ74EXRI9BA5XKLR&quot;,&quot;otpCode&quot;:&quot;166011&quot;}}}
+
+15:29:09.486 response time in milliseconds: 712
+1 &lt; 200
+1 &lt; Date: Thu, 31 Jul 2025 09:59:09 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 145
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: 521a7086-05d2-420e-8dbd-9c9a1cfa069b
+1 &lt; x-amzn-Remapped-content-length: 145
+1 &lt; x-amz-apigw-id: OkaxGFOWSQ0EXHQ=
+1 &lt; X-Amzn-Trace-Id: Root=1-688b3e6d-215521740b89d7b64eca53d7;Parent=2fe79c8349683bda;Sampled=0;Lineage=1:6370592a:0
+{&quot;data&quot;: {&quot;AdminLogin&quot;: {&quot;success&quot;: false, &quot;message&quot;: &quot;Invalid OTP Code&quot;, &quot;developerMessage&quot;: &quot;OTP code is invalid or expired&quot;, &quot;result&quot;: null}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>15:29:09.490 [print] {
+  &quot;data&quot;: {
+    &quot;AdminLogin&quot;: {
+      &quot;success&quot;: false,
+      &quot;message&quot;: &quot;Invalid OTP Code&quot;,
+      &quot;developerMessage&quot;: &quot;OTP code is invalid or expired&quot;,
+      &quot;result&quot;: null
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminLogin.success == true</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>match</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>match failed: EQUALS
+  $ | not equal (BOOLEAN:BOOLEAN)
+  false
+  true
+
+src/test/java/Admin_Login/Admin_otp/AdminOtp.feature:15</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>15:29:09.508 src/test/java/Admin_Login/Admin_otp/AdminOtp.feature:15
+And match response.data.AdminLogin.success == true
+match failed: EQUALS
+  $ | not equal (BOOLEAN:BOOLEAN)
+  false
+  true
+
+src/test/java/Admin_Login/Admin_otp/AdminOtp.feature:15
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.386</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Invalid UserID</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-8" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestData = karate.read('classpath:Admin_Login/Admin_otp/Graphql/AdminOtp.json')</span>
+
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>15:29:09.582 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestData</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.362</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>15:29:09.604 request:
+1 &gt; POST https://sbadminv3.mzapi.mezzofy.com/iam
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 353
+1 &gt; Host: sbadminv3.mzapi.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;mutation AdminLogin($input: AdminLoginInput!) { AdminLogin(input: $input) { success message developerMessage result { userData { platformRoleId platformUserId platformUserStatus userId userName userEmail userStatus menus { menuId menuName } } } } }&quot;,&quot;variables&quot;:{&quot;input&quot;:{&quot;platformuserId&quot;:&quot;PUSR027P2XWVX8EJ74EXRI9BA5XKL6&quot;,&quot;otpCode&quot;:&quot;172653&quot;}}}
+
+15:29:09.954 response time in milliseconds: 346
+1 &lt; 200
+1 &lt; Date: Thu, 31 Jul 2025 09:59:09 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 157
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: 77983cb5-90f3-471c-b550-f7384050c7e4
+1 &lt; x-amzn-Remapped-content-length: 157
+1 &lt; x-amz-apigw-id: OkaxOEOdyQ0EZPQ=
+1 &lt; X-Amzn-Trace-Id: Root=1-688b3e6d-636739c20dc2ca1714bdf052;Parent=65be99b7f28deb7a;Sampled=0;Lineage=1:6370592a:0
+{&quot;data&quot;: {&quot;AdminLogin&quot;: {&quot;success&quot;: false, &quot;message&quot;: &quot;Platform User Data Not Found!&quot;, &quot;developerMessage&quot;: &quot;Platform User Data Not Found!&quot;, &quot;result&quot;: null}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>15:29:09.975 [print] {
+  &quot;data&quot;: {
+    &quot;AdminLogin&quot;: {
+      &quot;success&quot;: false,
+      &quot;message&quot;: &quot;Platform User Data Not Found!&quot;,
+      &quot;developerMessage&quot;: &quot;Platform User Data Not Found!&quot;,
+      &quot;result&quot;: null
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminLogin.success == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.393</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">3 Minimum 30 Char Used ID</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestData = karate.read('classpath:Admin_Login/Admin_otp/Graphql/AdminOtp.json')</span>
+
+  <span class="lead-duration duration">0.013</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>15:29:10.016 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestData</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.367</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>15:29:10.061 request:
+1 &gt; POST https://sbadminv3.mzapi.mezzofy.com/iam
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 341
+1 &gt; Host: sbadminv3.mzapi.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;mutation AdminLogin($input: AdminLoginInput!) { AdminLogin(input: $input) { success message developerMessage result { userData { platformRoleId platformUserId platformUserStatus userId userName userEmail userStatus menus { menuId menuName } } } } }&quot;,&quot;variables&quot;:{&quot;input&quot;:{&quot;platformuserId&quot;:&quot;PUSR027P2XWVX8EJ74&quot;,&quot;otpCode&quot;:&quot;172653&quot;}}}
+
+15:29:10.411 response time in milliseconds: 348
+1 &lt; 200
+1 &lt; Date: Thu, 31 Jul 2025 09:59:10 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 173
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: f9f284fd-a76e-4fec-954f-49981ff276f5
+1 &lt; x-amzn-Remapped-content-length: 173
+1 &lt; x-amz-apigw-id: OkaxTH65SQ0EN8g=
+1 &lt; X-Amzn-Trace-Id: Root=1-688b3e6e-72e284720f7ec1b004c68a35;Parent=1b3cc12eeaf9b003;Sampled=0;Lineage=1:6370592a:0
+{&quot;data&quot;: {&quot;AdminLogin&quot;: {&quot;success&quot;: false, &quot;message&quot;: &quot;platformuserId must be a 30 character&quot;, &quot;developerMessage&quot;: &quot;platformuserId must be a 30 character&quot;, &quot;result&quot;: null}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>15:29:10.414 [print] {
+  &quot;data&quot;: {
+    &quot;AdminLogin&quot;: {
+      &quot;success&quot;: false,
+      &quot;message&quot;: &quot;platformuserId must be a 30 character&quot;,
+      &quot;developerMessage&quot;: &quot;platformuserId must be a 30 character&quot;,
+      &quot;result&quot;: null
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminLogin.success == false</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.331</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-18">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">4 Above 30 Char Used ID</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-18" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-19">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-19" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestData = karate.read('classpath:Admin_Login/Admin_otp/Graphql/AdminOtp.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>15:29:10.465 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestData</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.326</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>15:29:10.493 request:
+1 &gt; POST https://sbadminv3.mzapi.mezzofy.com/iam
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 354
+1 &gt; Host: sbadminv3.mzapi.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;mutation AdminLogin($input: AdminLoginInput!) { AdminLogin(input: $input) { success message developerMessage result { userData { platformRoleId platformUserId platformUserStatus userId userName userEmail userStatus menus { menuId menuName } } } } }&quot;,&quot;variables&quot;:{&quot;input&quot;:{&quot;platformuserId&quot;:&quot;PUSR027P2XWVX8EJ74EXRI9BA5XKL6Z&quot;,&quot;otpCode&quot;:&quot;172653&quot;}}}
+
+15:29:10.797 response time in milliseconds: 302
+1 &lt; 200
+1 &lt; Date: Thu, 31 Jul 2025 09:59:10 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 173
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: 9f99d1ac-48bc-4bd3-a74b-183876bb9a14
+1 &lt; x-amzn-Remapped-content-length: 173
+1 &lt; x-amz-apigw-id: OkaxXFScSQ0EDMQ=
+1 &lt; X-Amzn-Trace-Id: Root=1-688b3e6e-096448b34a7db0130cb0a983;Parent=32af41db9b01d562;Sampled=0;Lineage=1:6370592a:0
+{&quot;data&quot;: {&quot;AdminLogin&quot;: {&quot;success&quot;: false, &quot;message&quot;: &quot;platformuserId must be a 30 character&quot;, &quot;developerMessage&quot;: &quot;platformuserId must be a 30 character&quot;, &quot;result&quot;: null}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>15:29:10.808 [print] {
+  &quot;data&quot;: {
+    &quot;AdminLogin&quot;: {
+      &quot;success&quot;: false,
+      &quot;message&quot;: &quot;platformuserId must be a 30 character&quot;,
+      &quot;developerMessage&quot;: &quot;platformuserId must be a 30 character&quot;,
+      &quot;result&quot;: null
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminLogin.success == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.393</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">4 Empty User ID</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-23" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-24">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-24" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestData = karate.read('classpath:Admin_Login/Admin_otp/Graphql/AdminOtp.json')</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>15:29:10.859 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestData</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.363</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>15:29:10.910 request:
+1 &gt; POST https://sbadminv3.mzapi.mezzofy.com/iam
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 323
+1 &gt; Host: sbadminv3.mzapi.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;mutation AdminLogin($input: AdminLoginInput!) { AdminLogin(input: $input) { success message developerMessage result { userData { platformRoleId platformUserId platformUserStatus userId userName userEmail userStatus menus { menuId menuName } } } } }&quot;,&quot;variables&quot;:{&quot;input&quot;:{&quot;platformuserId&quot;:&quot;&quot;,&quot;otpCode&quot;:&quot;172653&quot;}}}
+
+15:29:11.240 response time in milliseconds: 323
+1 &lt; 200
+1 &lt; Date: Thu, 31 Jul 2025 09:59:11 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 162
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: d8347f9e-0f2d-44d2-be53-97df22b37db0
+1 &lt; x-amzn-Remapped-content-length: 162
+1 &lt; x-amz-apigw-id: OkaxbF2CyQ0ECTQ=
+1 &lt; X-Amzn-Trace-Id: Root=1-688b3e6f-7032a0d30f16ada30ba3299f;Parent=681bd7659106a21a;Sampled=0;Lineage=1:6370592a:0
+{&quot;data&quot;: {&quot;AdminLogin&quot;: {&quot;success&quot;: false, &quot;message&quot;: &quot;platformuserId is missing&quot;, &quot;developerMessage&quot;: &quot;platformuserId cannot be null or empty&quot;, &quot;result&quot;: null}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details">
+        <pre>15:29:11.261 [print] {
+  &quot;data&quot;: {
+    &quot;AdminLogin&quot;: {
+      &quot;success&quot;: false,
+      &quot;message&quot;: &quot;platformuserId is missing&quot;,
+      &quot;developerMessage&quot;: &quot;platformuserId cannot be null or empty&quot;,
+      &quot;result&quot;: null
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminLogin.success == false</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.381</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-28">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">6 Blank Space User ID</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-28" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-29">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-29" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestData = karate.read('classpath:Admin_Login/Admin_otp/Graphql/AdminOtp.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>15:29:11.306 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestData</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.368</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details">
+        <pre>15:29:11.311 request:
+1 &gt; POST https://sbadminv3.mzapi.mezzofy.com/iam
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 356
+1 &gt; Host: sbadminv3.mzapi.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;mutation AdminLogin($input: AdminLoginInput!) { AdminLogin(input: $input) { success message developerMessage result { userData { platformRoleId platformUserId platformUserStatus userId userName userEmail userStatus menus { menuId menuName } } } } }&quot;,&quot;variables&quot;:{&quot;input&quot;:{&quot;platformuserId&quot;:&quot;                                 &quot;,&quot;otpCode&quot;:&quot;172653&quot;}}}
+
+15:29:11.675 response time in milliseconds: 363
+1 &lt; 200
+1 &lt; Date: Thu, 31 Jul 2025 09:59:11 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 173
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: 01bfa6dd-2dde-4dae-82f8-2fa06a913ca5
+1 &lt; x-amzn-Remapped-content-length: 173
+1 &lt; x-amz-apigw-id: OkaxfFr2SQ0EAIw=
+1 &lt; X-Amzn-Trace-Id: Root=1-688b3e6f-7d647f323f0ea4de412b8b27;Parent=4b770697a4ab2aac;Sampled=0;Lineage=1:6370592a:0
+{&quot;data&quot;: {&quot;AdminLogin&quot;: {&quot;success&quot;: false, &quot;message&quot;: &quot;platformuserId must be a 30 character&quot;, &quot;developerMessage&quot;: &quot;platformuserId must be a 30 character&quot;, &quot;result&quot;: null}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>15:29:11.689 [print] {
+  &quot;data&quot;: {
+    &quot;AdminLogin&quot;: {
+      &quot;success&quot;: false,
+      &quot;message&quot;: &quot;platformuserId must be a 30 character&quot;,
+      &quot;developerMessage&quot;: &quot;platformuserId must be a 30 character&quot;,
+      &quot;result&quot;: null
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminLogin.success == false</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.373</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-33">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">7 Invalid otp code</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-33" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-34">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-34" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestData = karate.read('classpath:Admin_Login/Admin_otp/Graphql/AdminOtp.json')</span>
+
+  <span class="lead-duration duration">0.028</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-35">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-35" class="collapse collapsable-details">
+        <pre>15:29:11.686 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestData</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.342</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-36">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-36" class="collapse collapsable-details">
+        <pre>15:29:11.727 request:
+1 &gt; POST https://sbadminv3.mzapi.mezzofy.com/iam
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 353
+1 &gt; Host: sbadminv3.mzapi.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;mutation AdminLogin($input: AdminLoginInput!) { AdminLogin(input: $input) { success message developerMessage result { userData { platformRoleId platformUserId platformUserStatus userId userName userEmail userStatus menus { menuId menuName } } } } }&quot;,&quot;variables&quot;:{&quot;input&quot;:{&quot;platformuserId&quot;:&quot;PUSR027P2XWVX8EJ74EXRI9BA5XKLR&quot;,&quot;otpCode&quot;:&quot;754081&quot;}}}
+
+15:29:12.066 response time in milliseconds: 338
+1 &lt; 200
+1 &lt; Date: Thu, 31 Jul 2025 09:59:12 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 145
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: bd0b2803-6510-440d-9426-89134300086c
+1 &lt; x-amzn-Remapped-content-length: 145
+1 &lt; x-amz-apigw-id: OkaxjF6CyQ0ECTQ=
+1 &lt; X-Amzn-Trace-Id: Root=1-688b3e6f-0c61d5b33999551b32db64e0;Parent=6088dfa1a9aebd34;Sampled=0;Lineage=1:6370592a:0
+{&quot;data&quot;: {&quot;AdminLogin&quot;: {&quot;success&quot;: false, &quot;message&quot;: &quot;Invalid OTP Code&quot;, &quot;developerMessage&quot;: &quot;OTP code is invalid or expired&quot;, &quot;result&quot;: null}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-37">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-37" class="collapse collapsable-details">
+        <pre>15:29:12.069 [print] {
+  &quot;data&quot;: {
+    &quot;AdminLogin&quot;: {
+      &quot;success&quot;: false,
+      &quot;message&quot;: &quot;Invalid OTP Code&quot;,
+      &quot;developerMessage&quot;: &quot;OTP code is invalid or expired&quot;,
+      &quot;result&quot;: null
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminLogin.success == false</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.329</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-38">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">7 Minimum 6 Char</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-38" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-39">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-39" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestData = karate.read('classpath:Admin_Login/Admin_otp/Graphql/AdminOtp.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-40">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-40" class="collapse collapsable-details">
+        <pre>15:29:11.708 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestData</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.325</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-41">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-41" class="collapse collapsable-details">
+        <pre>15:29:11.729 request:
+1 &gt; POST https://sbadminv3.mzapi.mezzofy.com/iam
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 351
+1 &gt; Host: sbadminv3.mzapi.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;mutation AdminLogin($input: AdminLoginInput!) { AdminLogin(input: $input) { success message developerMessage result { userData { platformRoleId platformUserId platformUserStatus userId userName userEmail userStatus menus { menuId menuName } } } } }&quot;,&quot;variables&quot;:{&quot;input&quot;:{&quot;platformuserId&quot;:&quot;PUSR027P2XWVX8EJ74EXRI9BA5XKLR&quot;,&quot;otpCode&quot;:&quot;7540&quot;}}}
+
+15:29:12.050 response time in milliseconds: 316
+1 &lt; 200
+1 &lt; Date: Thu, 31 Jul 2025 09:59:12 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 149
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: c0d8385c-bbf3-46ee-9819-45ba050a1aa8
+1 &lt; x-amzn-Remapped-content-length: 149
+1 &lt; x-amz-apigw-id: OkaxjEcoSQ0Ebow=
+1 &lt; X-Amzn-Trace-Id: Root=1-688b3e6f-534f4e38520c34f866a3a883;Parent=5223e7b7f9d37d34;Sampled=0;Lineage=1:6370592a:0
+{&quot;data&quot;: {&quot;AdminLogin&quot;: {&quot;success&quot;: false, &quot;message&quot;: &quot;Invalid OTP length&quot;, &quot;developerMessage&quot;: &quot;otpCode must be exactly 6 digits&quot;, &quot;result&quot;: null}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-42">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-42" class="collapse collapsable-details">
+        <pre>15:29:12.053 [print] {
+  &quot;data&quot;: {
+    &quot;AdminLogin&quot;: {
+      &quot;success&quot;: false,
+      &quot;message&quot;: &quot;Invalid OTP length&quot;,
+      &quot;developerMessage&quot;: &quot;otpCode must be exactly 6 digits&quot;,
+      &quot;result&quot;: null
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminLogin.success == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.422</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-43">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">7 above 6 char  otp code</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-43" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-44">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-44" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestData = karate.read('classpath:Admin_Login/Admin_otp/Graphql/AdminOtp.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-45">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-45" class="collapse collapsable-details">
+        <pre>15:29:12.061 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestData</span>
+
+  <span class="lead-duration duration">0.015</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.402</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-46">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-46" class="collapse collapsable-details">
+        <pre>15:29:12.128 request:
+1 &gt; POST https://sbadminv3.mzapi.mezzofy.com/iam
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 354
+1 &gt; Host: sbadminv3.mzapi.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;mutation AdminLogin($input: AdminLoginInput!) { AdminLogin(input: $input) { success message developerMessage result { userData { platformRoleId platformUserId platformUserStatus userId userName userEmail userStatus menus { menuId menuName } } } } }&quot;,&quot;variables&quot;:{&quot;input&quot;:{&quot;platformuserId&quot;:&quot;PUSR027P2XWVX8EJ74EXRI9BA5XKLR&quot;,&quot;otpCode&quot;:&quot;7540817&quot;}}}
+
+15:29:12.512 response time in milliseconds: 381
+1 &lt; 200
+1 &lt; Date: Thu, 31 Jul 2025 09:59:12 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 149
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: 0f9f632e-f540-4d12-be37-24282bfa52fb
+1 &lt; x-amzn-Remapped-content-length: 149
+1 &lt; x-amz-apigw-id: OkaxoF8QyQ0ECTQ=
+1 &lt; X-Amzn-Trace-Id: Root=1-688b3e70-53144d5c2e8acefb5eec806c;Parent=524190ebf58c75e3;Sampled=0;Lineage=1:6370592a:0
+{&quot;data&quot;: {&quot;AdminLogin&quot;: {&quot;success&quot;: false, &quot;message&quot;: &quot;Invalid OTP length&quot;, &quot;developerMessage&quot;: &quot;otpCode must be exactly 6 digits&quot;, &quot;result&quot;: null}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-47">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-47" class="collapse collapsable-details">
+        <pre>15:29:12.516 [print] {
+  &quot;data&quot;: {
+    &quot;AdminLogin&quot;: {
+      &quot;success&quot;: false,
+      &quot;message&quot;: &quot;Invalid OTP length&quot;,
+      &quot;developerMessage&quot;: &quot;otpCode must be exactly 6 digits&quot;,
+      &quot;result&quot;: null
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminLogin.success == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.353</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-48">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">7 Empty otp code</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-48" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-49">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-49" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestData = karate.read('classpath:Admin_Login/Admin_otp/Graphql/AdminOtp.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-50">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-50" class="collapse collapsable-details">
+        <pre>15:29:12.090 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.011</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestData</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.336</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-51">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-51" class="collapse collapsable-details">
+        <pre>15:29:12.127 request:
+1 &gt; POST https://sbadminv3.mzapi.mezzofy.com/iam
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 347
+1 &gt; Host: sbadminv3.mzapi.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;mutation AdminLogin($input: AdminLoginInput!) { AdminLogin(input: $input) { success message developerMessage result { userData { platformRoleId platformUserId platformUserStatus userId userName userEmail userStatus menus { menuId menuName } } } } }&quot;,&quot;variables&quot;:{&quot;input&quot;:{&quot;platformuserId&quot;:&quot;PUSR027P2XWVX8EJ74EXRI9BA5XKLR&quot;,&quot;otpCode&quot;:&quot;&quot;}}}
+
+15:29:12.448 response time in milliseconds: 319
+1 &lt; 200
+1 &lt; Date: Thu, 31 Jul 2025 09:59:12 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 136
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: c1314d87-beb2-457c-b624-414d788f8264
+1 &lt; x-amzn-Remapped-content-length: 136
+1 &lt; x-amz-apigw-id: OkaxoHq2yQ0EUiQ=
+1 &lt; X-Amzn-Trace-Id: Root=1-688b3e70-04e5cd86440fabda33c72a17;Parent=660d74e8a5b7b2c8;Sampled=0;Lineage=1:6370592a:0
+{&quot;data&quot;: {&quot;AdminLogin&quot;: {&quot;success&quot;: false, &quot;message&quot;: &quot;OTP is missing&quot;, &quot;developerMessage&quot;: &quot;otp_code cannot be null&quot;, &quot;result&quot;: null}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-52">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-52" class="collapse collapsable-details">
+        <pre>15:29:12.452 [print] {
+  &quot;data&quot;: {
+    &quot;AdminLogin&quot;: {
+      &quot;success&quot;: false,
+      &quot;message&quot;: &quot;OTP is missing&quot;,
+      &quot;developerMessage&quot;: &quot;otp_code cannot be null&quot;,
+      &quot;result&quot;: null
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminLogin.success == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.330</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-53">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">7 BlankSpace otp code</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-53" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-54">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-54" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestData = karate.read('classpath:Admin_Login/Admin_otp/Graphql/AdminOtp.json')</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-55">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-55" class="collapse collapsable-details">
+        <pre>15:29:12.482 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestData</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.311</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-56">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-56" class="collapse collapsable-details">
+        <pre>15:29:12.505 request:
+1 &gt; POST https://sbadminv3.mzapi.mezzofy.com/iam
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 354
+1 &gt; Host: sbadminv3.mzapi.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;mutation AdminLogin($input: AdminLoginInput!) { AdminLogin(input: $input) { success message developerMessage result { userData { platformRoleId platformUserId platformUserStatus userId userName userEmail userStatus menus { menuId menuName } } } } }&quot;,&quot;variables&quot;:{&quot;input&quot;:{&quot;platformuserId&quot;:&quot;PUSR027P2XWVX8EJ74EXRI9BA5XKLR&quot;,&quot;otpCode&quot;:&quot;       &quot;}}}
+
+15:29:12.807 response time in milliseconds: 300
+1 &lt; 200
+1 &lt; Date: Thu, 31 Jul 2025 09:59:12 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 149
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: a4c2b611-ed65-45eb-929d-d2b7ae75e43b
+1 &lt; x-amzn-Remapped-content-length: 149
+1 &lt; x-amz-apigw-id: OkaxrEc7yQ0EZPQ=
+1 &lt; X-Amzn-Trace-Id: Root=1-688b3e70-23bd412c6595202a6e1c4a09;Parent=71bdc5f726cee968;Sampled=0;Lineage=1:6370592a:0
+{&quot;data&quot;: {&quot;AdminLogin&quot;: {&quot;success&quot;: false, &quot;message&quot;: &quot;Invalid OTP length&quot;, &quot;developerMessage&quot;: &quot;otpCode must be exactly 6 digits&quot;, &quot;result&quot;: null}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-57">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-57" class="collapse collapsable-details">
+        <pre>15:29:12.819 [print] {
+  &quot;data&quot;: {
+    &quot;AdminLogin&quot;: {
+      &quot;success&quot;: false,
+      &quot;message&quot;: &quot;Invalid OTP length&quot;,
+      &quot;developerMessage&quot;: &quot;otpCode must be exactly 6 digits&quot;,
+      &quot;result&quot;: null
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminLogin.success == false</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

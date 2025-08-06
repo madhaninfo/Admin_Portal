@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: src/test/java/Settings/AdminRole/NFcPurchaseAPI copy.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Admin_V3_API</td>
+      <td>26 Jul 2025, 17:56</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">src/test/java/Settings/AdminRole/NFcPurchaseAPI copy.feature</td>
+          <td      class="passed"    >12</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">12</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="1939791678">1.939</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">src/test/java/Settings/AdminRole/NFcPurchaseAPI copy.feature</span>
+
+
+</div>
+
+        <div class="description indention">NFC Purchase API
+for help, see: https://github.com/karatelabs/karate/wiki/IDE-Support</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.152</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def username = 'By3I7fX' // Replace with your actual username</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>17:56:00.309 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def password = 'platform' // Replace with your actual password</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def authHeader = 'Basic ' + java.util.Base64.getEncoder().encodeToString((username + ':' + password).getBytes())</span>
+
+  <span class="lead-duration duration">0.056</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = authHeader</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'Authorization header:', authHeader</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>17:56:00.482 [print] Authorization header: Basic QnkzSTdmWDpwbGF0Zm9ybQ== 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonTemplate = read('NFCPurchase.json')</span>
+
+  <span class="lead-duration duration">0.075</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">1.787</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">NFC API</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;https://express.mzapiea.mezzofy.com/v2/nfctagurl&quot;</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonTemplate</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">1.772</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>17:56:01.422 request:
+1 &gt; POST https://express.mzapiea.mezzofy.com/v2/nfctagurl
+1 &gt; Authorization: Basic QnkzSTdmWDpwbGF0Zm9ybQ==
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 66
+1 &gt; Host: express.mzapiea.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;merchant_id&quot;:&quot;8qyu&quot;,&quot;nfc_tag_url&quot;:&quot;https:\/\/mez.fi\/x7aSH6LHR&quot;}
+
+17:56:02.325 response time in milliseconds: 887
+1 &lt; 200
+1 &lt; Date: Sat, 26 Jul 2025 12:26:02 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 2783
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; ETag: W/&quot;adf-EpkUzSaY095PfTiJI8ylZuJP/n0&quot;
+{&quot;nfc_campaign_detail&quot;:{&quot;nfc_campaign_id&quot;:&quot;WNA6YH&quot;,&quot;merchant_id&quot;:&quot;8QYU&quot;,&quot;nfc_campaign_code&quot;:&quot;N1000021&quot;,&quot;action_button1&quot;:&quot;CONTINUE&quot;,&quot;campaign_availability_limit&quot;:&quot;A&quot;,&quot;campaign_ended&quot;:&quot;&lt;p&gt;test&lt;/p&gt;\r\n&quot;,&quot;campaign_fully_distributed&quot;:&quot;&lt;p&gt;Test&lt;/p&gt;\r\n&quot;,&quot;campaign_not_started&quot;:&quot;&lt;p&gt;test&lt;/p&gt;\r\n&quot;,&quot;coupon_list_display&quot;:&quot;I&quot;,&quot;display_campaign_qty&quot;:&quot;I&quot;,&quot;distribution_channel&quot;:&quot;test&quot;,&quot;from_validity_date_time&quot;:&quot;2025-06-16T00:00:01.000Z&quot;,&quot;google_utm&quot;:&quot;One of the most coniusing thing while writing an essay, assignment, or an article is the word count. Many of the professionals and students don&rsquo;t know how many words they should write for a particular task. One of the major queries seen on Google is how a&quot;,&quot;maximum_selection_coupon&quot;:null,&quot;nfc_campaign_data_type&quot;:&quot;Y&quot;,&quot;nfc_campaign_desc&quot;:&quot;&lt;p&gt;test&lt;/p&gt;\r\n&quot;,&quot;nfc_campaign_name&quot;:&quot;&lt;p&gt;June 16 2025 NFC Single Test 1&lt;/p&gt;\r\n&quot;,&quot;nfc_campaign_redemption_guide&quot;:&quot;&lt;p&gt;test&lt;/p&gt;\r\n&quot;,&quot;nfc_campaign_status&quot;:&quot;A&quot;,&quot;nfc_campaign_tc&quot;:&quot;&lt;p&gt;test&lt;/p&gt;\r\n&quot;,&quot;nfc_campaign_type&quot;:&quot;S&quot;,&quot;remarks&quot;:&quot;16 june - 1 oct 2025&quot;,&quot;target_url&quot;:&quot;&quot;,&quot;theme_color_code&quot;:&quot;#0000&quot;,&quot;to_validity_date_time&quot;:&quot;2025-10-01T23:59:59.000Z&quot;,&quot;video_url&quot;:&quot;&quot;,&quot;time_display&quot;:&quot;I&quot;,&quot;created_by&quot;:&quot;YEYGN&quot;,&quot;created_on&quot;:&quot;2025-06-16T11:54:56.000Z&quot;,&quot;updated_by&quot;:&quot;YEYGN&quot;,&quot;updated_on&quot;:&quot;2025-06-17T08:55:40.000Z&quot;,&quot;nfc_campaign_tags&quot;:[{&quot;nfc_campaign_tag&quot;:{&quot;status&quot;:&quot;A&quot;,&quot;tag_name&quot;:&quot;single&quot;,&quot;created_by&quot;:&quot;YEYGN&quot;,&quot;created_on&quot;:&quot;2025-06-17T08:55:40.000Z&quot;,&quot;updated_by&quot;:&quot;YEYGN&quot;,&quot;updated_on&quot;:&quot;2025-06-17T08:55:40.000Z&quot;}}],&quot;nfc_campaign_images&quot;:[],&quot;localization&quot;:{&quot;nfc_campaign_name&quot;:{&quot;en&quot;:&quot;&lt;p&gt;June 16 2025 NFC Single Test 1&lt;/p&gt;\r\n&quot;},&quot;nfc_campaign_desc&quot;:{&quot;en&quot;:&quot;&lt;p&gt;test&lt;/p&gt;\r\n&quot;},&quot;nfc_campaign_tc&quot;:{&quot;en&quot;:&quot;&lt;p&gt;test&lt;/p&gt;\r\n&quot;},&quot;nfc_campaign_redemption_guide&quot;:{&quot;en&quot;:&quot;&lt;p&gt;test&lt;/p&gt;\r\n&quot;},&quot;nfc_action_button1&quot;:{&quot;en&quot;:&quot;CONTINUE&quot;},&quot;nfc_campaign_tag_name&quot;:null,&quot;nfc_campaign_fully_distributed&quot;:{&quot;en&quot;:&quot;&lt;p&gt;Test&lt;/p&gt;\r\n&quot;},&quot;nfc_campaign_not_started&quot;:{&quot;en&quot;:&quot;&lt;p&gt;test&lt;/p&gt;\r\n&quot;},&quot;nfc_campaign_ended&quot;:{&quot;en&quot;:&quot;&lt;p&gt;test&lt;/p&gt;\r\n&quot;}}},&quot;nfc_tag_detail&quot;:{&quot;nfc_tag_id&quot;:&quot;B4CJRJ&quot;,&quot;merchant_id&quot;:&quot;8QYU&quot;,&quot;nfc_tag_code&quot;:&quot;Q1007906&quot;,&quot;gps_address&quot;:&quot;Thanjavur, Tamil Nadu, India\r\n&quot;,&quot;nfc_header_image&quot;:null,&quot;address&quot;:&quot;Thanjavur&quot;,&quot;location_desc&quot;:&quot;NFC QR Code Testing &quot;,&quot;target_url&quot;:&quot;https://mez.fi/6ss8_nQNg&quot;,&quot;time_zone&quot;:&quot;Asia/Kolkata&quot;,&quot;nfc_tag_image&quot;:&quot;https://images.platform.mezzofy.com/coupon/qrcode/448224162D4846495B94F74C93F59DC6.png&quot;,&quot;nfc_tag_url&quot;:&quot;https://mez.fi/gyYc03LHR&quot;,&quot;country_code&quot;:&quot;HK&quot;,&quot;remarks&quot;:&quot;&quot;,&quot;nfc_tag_type&quot;:null,&quot;nfc_tag_status&quot;:&quot;A&quot;,&quot;created_by&quot;:&quot;1&quot;,&quot;created_on&quot;:&quot;2025-06-16T06:52:40.000Z&quot;,&quot;updated_on&quot;:&quot;2025-07-26T09:54:58.000Z&quot;,&quot;updated_by&quot;:&quot;1&quot;,&quot;created_via&quot;:&quot;B&quot;,&quot;updated_via&quot;:&quot;B&quot;,&quot;lang&quot;:null,&quot;maximum_selection_coupon&quot;:null,&quot;nfc_location_tags&quot;:[{&quot;nfc_location_tag&quot;:{}},{&quot;nfc_location_tag&quot;:{}},{&quot;nfc_location_tag&quot;:{}},{&quot;nfc_location_tag&quot;:{}}]}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print 'NFC_Purchase_Api:', response</span>
+
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>17:56:02.346 [print] NFC_Purchase_Api: {
+  &quot;nfc_campaign_detail&quot;: {
+    &quot;nfc_campaign_id&quot;: &quot;WNA6YH&quot;,
+    &quot;merchant_id&quot;: &quot;8QYU&quot;,
+    &quot;nfc_campaign_code&quot;: &quot;N1000021&quot;,
+    &quot;action_button1&quot;: &quot;CONTINUE&quot;,
+    &quot;campaign_availability_limit&quot;: &quot;A&quot;,
+    &quot;campaign_ended&quot;: &quot;&lt;p&gt;test&lt;/p&gt;\r\n&quot;,
+    &quot;campaign_fully_distributed&quot;: &quot;&lt;p&gt;Test&lt;/p&gt;\r\n&quot;,
+    &quot;campaign_not_started&quot;: &quot;&lt;p&gt;test&lt;/p&gt;\r\n&quot;,
+    &quot;coupon_list_display&quot;: &quot;I&quot;,
+    &quot;display_campaign_qty&quot;: &quot;I&quot;,
+    &quot;distribution_channel&quot;: &quot;test&quot;,
+    &quot;from_validity_date_time&quot;: &quot;2025-06-16T00:00:01.000Z&quot;,
+    &quot;google_utm&quot;: &quot;One of the most coniusing thing while writing an essay, assignment, or an article is the word count. Many of the professionals and students don\u2019t know how many words they should write for a particular task. One of the major queries seen on Google is how a&quot;,
+    &quot;maximum_selection_coupon&quot;: null,
+    &quot;nfc_campaign_data_type&quot;: &quot;Y&quot;,
+    &quot;nfc_campaign_desc&quot;: &quot;&lt;p&gt;test&lt;/p&gt;\r\n&quot;,
+    &quot;nfc_campaign_name&quot;: &quot;&lt;p&gt;June 16 2025 NFC Single Test 1&lt;/p&gt;\r\n&quot;,
+    &quot;nfc_campaign_redemption_guide&quot;: &quot;&lt;p&gt;test&lt;/p&gt;\r\n&quot;,
+    &quot;nfc_campaign_status&quot;: &quot;A&quot;,
+    &quot;nfc_campaign_tc&quot;: &quot;&lt;p&gt;test&lt;/p&gt;\r\n&quot;,
+    &quot;nfc_campaign_type&quot;: &quot;S&quot;,
+    &quot;remarks&quot;: &quot;16 june - 1 oct 2025&quot;,
+    &quot;target_url&quot;: &quot;&quot;,
+    &quot;theme_color_code&quot;: &quot;#0000&quot;,
+    &quot;to_validity_date_time&quot;: &quot;2025-10-01T23:59:59.000Z&quot;,
+    &quot;video_url&quot;: &quot;&quot;,
+    &quot;time_display&quot;: &quot;I&quot;,
+    &quot;created_by&quot;: &quot;YEYGN&quot;,
+    &quot;created_on&quot;: &quot;2025-06-16T11:54:56.000Z&quot;,
+    &quot;updated_by&quot;: &quot;YEYGN&quot;,
+    &quot;updated_on&quot;: &quot;2025-06-17T08:55:40.000Z&quot;,
+    &quot;nfc_campaign_tags&quot;: [
+      {
+        &quot;nfc_campaign_tag&quot;: {
+          &quot;status&quot;: &quot;A&quot;,
+          &quot;tag_name&quot;: &quot;single&quot;,
+          &quot;created_by&quot;: &quot;YEYGN&quot;,
+          &quot;created_on&quot;: &quot;2025-06-17T08:55:40.000Z&quot;,
+          &quot;updated_by&quot;: &quot;YEYGN&quot;,
+          &quot;updated_on&quot;: &quot;2025-06-17T08:55:40.000Z&quot;
+        }
+      }
+    ],
+    &quot;nfc_campaign_images&quot;: [
+    ],
+    &quot;localization&quot;: {
+      &quot;nfc_campaign_name&quot;: {
+        &quot;en&quot;: &quot;&lt;p&gt;June 16 2025 NFC Single Test 1&lt;/p&gt;\r\n&quot;
+      },
+      &quot;nfc_campaign_desc&quot;: {
+        &quot;en&quot;: &quot;&lt;p&gt;test&lt;/p&gt;\r\n&quot;
+      },
+      &quot;nfc_campaign_tc&quot;: {
+        &quot;en&quot;: &quot;&lt;p&gt;test&lt;/p&gt;\r\n&quot;
+      },
+      &quot;nfc_campaign_redemption_guide&quot;: {
+        &quot;en&quot;: &quot;&lt;p&gt;test&lt;/p&gt;\r\n&quot;
+      },
+      &quot;nfc_action_button1&quot;: {
+        &quot;en&quot;: &quot;CONTINUE&quot;
+      },
+      &quot;nfc_campaign_tag_name&quot;: null,
+      &quot;nfc_campaign_fully_distributed&quot;: {
+        &quot;en&quot;: &quot;&lt;p&gt;Test&lt;/p&gt;\r\n&quot;
+      },
+      &quot;nfc_campaign_not_started&quot;: {
+        &quot;en&quot;: &quot;&lt;p&gt;test&lt;/p&gt;\r\n&quot;
+      },
+      &quot;nfc_campaign_ended&quot;: {
+        &quot;en&quot;: &quot;&lt;p&gt;test&lt;/p&gt;\r\n&quot;
+      }
+    }
+  },
+  &quot;nfc_tag_detail&quot;: {
+    &quot;nfc_tag_id&quot;: &quot;B4CJRJ&quot;,
+    &quot;merchant_id&quot;: &quot;8QYU&quot;,
+    &quot;nfc_tag_code&quot;: &quot;Q1007906&quot;,
+    &quot;gps_address&quot;: &quot;Thanjavur, Tamil Nadu, India\r\n&quot;,
+    &quot;nfc_header_image&quot;: null,
+    &quot;address&quot;: &quot;Thanjavur&quot;,
+    &quot;location_desc&quot;: &quot;NFC QR Code Testing &quot;,
+    &quot;target_url&quot;: &quot;https://mez.fi/6ss8_nQNg&quot;,
+    &quot;time_zone&quot;: &quot;Asia/Kolkata&quot;,
+    &quot;nfc_tag_image&quot;: &quot;https://images.platform.mezzofy.com/coupon/qrcode/448224162D4846495B94F74C93F59DC6.png&quot;,
+    &quot;nfc_tag_url&quot;: &quot;https://mez.fi/gyYc03LHR&quot;,
+    &quot;country_code&quot;: &quot;HK&quot;,
+    &quot;remarks&quot;: &quot;&quot;,
+    &quot;nfc_tag_type&quot;: null,
+    &quot;nfc_tag_status&quot;: &quot;A&quot;,
+    &quot;created_by&quot;: &quot;1&quot;,
+    &quot;created_on&quot;: &quot;2025-06-16T06:52:40.000Z&quot;,
+    &quot;updated_on&quot;: &quot;2025-07-26T09:54:58.000Z&quot;,
+    &quot;updated_by&quot;: &quot;1&quot;,
+    &quot;created_via&quot;: &quot;B&quot;,
+    &quot;updated_via&quot;: &quot;B&quot;,
+    &quot;lang&quot;: null,
+    &quot;maximum_selection_coupon&quot;: null,
+    &quot;nfc_location_tags&quot;: [
+      {
+        &quot;nfc_location_tag&quot;: {
+        }
+      },
+      {
+        &quot;nfc_location_tag&quot;: {
+        }
+      },
+      {
+        &quot;nfc_location_tag&quot;: {
+        }
+      },
+      {
+        &quot;nfc_location_tag&quot;: {
+        }
+      }
+    ]
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

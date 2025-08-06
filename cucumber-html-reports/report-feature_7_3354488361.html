@@ -1,0 +1,2689 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: src/test/java/Settings/AdminRole/RoleDetail.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Admin_V3_API</td>
+      <td>01 Aug 2025, 16:54</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">src/test/java/Settings/AdminRole/RoleDetail.feature</td>
+          <td      class="passed"    >60</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">60</td>
+
+          <td  class="passed"    >5</td>
+          <td >0</td>
+          <td class="total">5</td>
+
+          <td class="duration" data-value="1740486175">1.740</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">src/test/java/Settings/AdminRole/RoleDetail.feature</span>
+
+
+</div>
+
+        <div class="description indention">Admin RoleDetail API</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.330</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Active Status PlatformRole ID</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">def platformRoleId = 'PRLE04CV9JMCC1G9U52NV16M4HBJ07'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>16:54:27.118 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def variables = { platformRoleId: '#(platformRoleId)' }</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def query = karate.read('classpath:Settings/AdminRole/Graphql/RoleDetail.gql')</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print query</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>16:54:27.130 [print] # platform-role-detail.gql
+query PlatformRoleDetail($platformRoleId: String!) {
+  PlatformRoleDetail(query: { platformRoleId: $platformRoleId }) {
+    success
+    message
+    developerMessage
+    result {
+      platformRoleId
+      platformRoleName
+      platformRoleDesc
+      platformRoleStatus
+      platformRoleCode
+      platformRoleType
+      menus {
+        menuId
+        menuName
+      }
+      createdOn
+      updatedOn
+      createdBy
+      updatedBy
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request { query: '#(query)', variables: '#(variables)' }</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.313</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>16:54:27.132 request:
+1 &gt; POST https://sbadminv3.mzapi.mezzofy.com/iam
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 573
+1 &gt; Host: sbadminv3.mzapi.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;# platform-role-detail.gql\nquery PlatformRoleDetail($platformRoleId: String!) {\n  PlatformRoleDetail(query: { platformRoleId: $platformRoleId }) {\n    success\n    message\n    developerMessage\n    result {\n      platformRoleId\n      platformRoleName\n      platformRoleDesc\n      platformRoleStatus\n      platformRoleCode\n      platformRoleType\n      menus {\n        menuId\n        menuName\n      }\n      createdOn\n      updatedOn\n      createdBy\n      updatedBy\n    }\n  }\n}\n&quot;,&quot;variables&quot;:{&quot;platformRoleId&quot;:&quot;PRLE04CV9JMCC1G9U52NV16M4HBJ07&quot;}}
+
+16:54:27.444 response time in milliseconds: 311
+1 &lt; 200
+1 &lt; Date: Fri, 01 Aug 2025 11:24:27 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 620
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: 67c80da3-3f20-45e7-9962-9dd40f57193a
+1 &lt; x-amzn-Remapped-content-length: 620
+1 &lt; x-amz-apigw-id: On6M0EbsyQ0EJwA=
+1 &lt; X-Amzn-Trace-Id: Root=1-688ca3eb-6e8a22df75757e0958f3d0df;Parent=7ec2ed77205fa2bc;Sampled=0;Lineage=1:6370592a:0
+{&quot;data&quot;: {&quot;PlatformRoleDetail&quot;: {&quot;success&quot;: true, &quot;message&quot;: &quot;success&quot;, &quot;developerMessage&quot;: &quot;success&quot;, &quot;result&quot;: {&quot;platformRoleId&quot;: &quot;PRLE04CV9JMCC1G9U52NV16M4HBJ07&quot;, &quot;platformRoleName&quot;: &quot;FO Developer Role 14072044&quot;, &quot;platformRoleDesc&quot;: &quot;Settings Menu only&quot;, &quot;platformRoleStatus&quot;: &quot;A&quot;, &quot;platformRoleCode&quot;: &quot;CT7NKWIUZZBU5MD&quot;, &quot;platformRoleType&quot;: &quot;A&quot;, &quot;menus&quot;: [{&quot;menuId&quot;: &quot;MENU950C81BE2B477AF1BE1723EA5E&quot;, &quot;menuName&quot;: &quot;Home&quot;}], &quot;createdOn&quot;: &quot;2025-07-25T05:15:59.131322+00:00&quot;, &quot;updatedOn&quot;: &quot;2025-07-25T05:15:59.131322+00:00&quot;, &quot;createdBy&quot;: &quot;USER02ZBHVR3UI5ZFB3UVM9PUA4RDG&quot;, &quot;updatedBy&quot;: &quot;USER02ZBHVR3UI5ZFB3UVM9PUA4RDG&quot;}}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>16:54:27.445 [print] {
+  &quot;data&quot;: {
+    &quot;PlatformRoleDetail&quot;: {
+      &quot;success&quot;: true,
+      &quot;message&quot;: &quot;success&quot;,
+      &quot;developerMessage&quot;: &quot;success&quot;,
+      &quot;result&quot;: {
+        &quot;platformRoleId&quot;: &quot;PRLE04CV9JMCC1G9U52NV16M4HBJ07&quot;,
+        &quot;platformRoleName&quot;: &quot;FO Developer Role 14072044&quot;,
+        &quot;platformRoleDesc&quot;: &quot;Settings Menu only&quot;,
+        &quot;platformRoleStatus&quot;: &quot;A&quot;,
+        &quot;platformRoleCode&quot;: &quot;CT7NKWIUZZBU5MD&quot;,
+        &quot;platformRoleType&quot;: &quot;A&quot;,
+        &quot;menus&quot;: [
+          {
+            &quot;menuId&quot;: &quot;MENU950C81BE2B477AF1BE1723EA5E&quot;,
+            &quot;menuName&quot;: &quot;Home&quot;
+          }
+        ],
+        &quot;createdOn&quot;: &quot;2025-07-25T05:15:59.131322+00:00&quot;,
+        &quot;updatedOn&quot;: &quot;2025-07-25T05:15:59.131322+00:00&quot;,
+        &quot;createdBy&quot;: &quot;USER02ZBHVR3UI5ZFB3UVM9PUA4RDG&quot;,
+        &quot;updatedBy&quot;: &quot;USER02ZBHVR3UI5ZFB3UVM9PUA4RDG&quot;
+      }
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.PlatformRoleDetail.success == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def message = response.data.PlatformRoleDetail.message</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print message</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>16:54:27.450 [print] success 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.375</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Inactive Status PlatformRole ID</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-8" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">def platformRoleId = 'PRLE00ZU52BOGO9YEOBC6BJ0O4ERBX'</span>
+
+  <span class="lead-duration duration">0.028</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>16:54:27.198 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def variables = { platformRoleId: '#(platformRoleId)' }</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def query = karate.read('classpath:Settings/AdminRole/Graphql/RoleDetail.gql')</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print query</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>16:54:27.242 [print] # platform-role-detail.gql
+query PlatformRoleDetail($platformRoleId: String!) {
+  PlatformRoleDetail(query: { platformRoleId: $platformRoleId }) {
+    success
+    message
+    developerMessage
+    result {
+      platformRoleId
+      platformRoleName
+      platformRoleDesc
+      platformRoleStatus
+      platformRoleCode
+      platformRoleType
+      menus {
+        menuId
+        menuName
+      }
+      createdOn
+      updatedOn
+      createdBy
+      updatedBy
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request { query: '#(query)', variables: '#(variables)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.332</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>16:54:27.244 request:
+1 &gt; POST https://sbadminv3.mzapi.mezzofy.com/iam
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 573
+1 &gt; Host: sbadminv3.mzapi.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;# platform-role-detail.gql\nquery PlatformRoleDetail($platformRoleId: String!) {\n  PlatformRoleDetail(query: { platformRoleId: $platformRoleId }) {\n    success\n    message\n    developerMessage\n    result {\n      platformRoleId\n      platformRoleName\n      platformRoleDesc\n      platformRoleStatus\n      platformRoleCode\n      platformRoleType\n      menus {\n        menuId\n        menuName\n      }\n      createdOn\n      updatedOn\n      createdBy\n      updatedBy\n    }\n  }\n}\n&quot;,&quot;variables&quot;:{&quot;platformRoleId&quot;:&quot;PRLE00ZU52BOGO9YEOBC6BJ0O4ERBX&quot;}}
+
+16:54:27.575 response time in milliseconds: 328
+1 &lt; 200
+1 &lt; Date: Fri, 01 Aug 2025 11:24:27 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 562
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: 7e8e6c3a-e878-420c-8613-223e363ca394
+1 &lt; x-amzn-Remapped-content-length: 562
+1 &lt; x-amz-apigw-id: On6M1HxbyQ0EIOg=
+1 &lt; X-Amzn-Trace-Id: Root=1-688ca3eb-7c1b9d0020c1dd327a5149f4;Parent=7f5b0b41ffcfe1ff;Sampled=0;Lineage=1:6370592a:0
+{&quot;data&quot;: {&quot;PlatformRoleDetail&quot;: {&quot;success&quot;: true, &quot;message&quot;: &quot;success&quot;, &quot;developerMessage&quot;: &quot;success&quot;, &quot;result&quot;: {&quot;platformRoleId&quot;: &quot;PRLE00ZU52BOGO9YEOBC6BJ0O4ERBX&quot;, &quot;platformRoleName&quot;: &quot;Junction Administratorr&quot;, &quot;platformRoleDesc&quot;: &quot;Platform Administrator Role&quot;, &quot;platformRoleStatus&quot;: &quot;I&quot;, &quot;platformRoleCode&quot;: &quot;G6CUR2VUCETERNF&quot;, &quot;platformRoleType&quot;: &quot;A&quot;, &quot;menus&quot;: [], &quot;createdOn&quot;: &quot;2025-07-12T07:03:58.974415+00:00&quot;, &quot;updatedOn&quot;: &quot;2025-07-12T07:04:55.580053+00:00&quot;, &quot;createdBy&quot;: &quot;USER02ZBHVR3UI5ZFB3UVM9PUA4RDG&quot;, &quot;updatedBy&quot;: &quot;USER02ZBHVR3UI5ZFB3UVM9PUA4RDG&quot;}}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>16:54:27.576 [print] {
+  &quot;data&quot;: {
+    &quot;PlatformRoleDetail&quot;: {
+      &quot;success&quot;: true,
+      &quot;message&quot;: &quot;success&quot;,
+      &quot;developerMessage&quot;: &quot;success&quot;,
+      &quot;result&quot;: {
+        &quot;platformRoleId&quot;: &quot;PRLE00ZU52BOGO9YEOBC6BJ0O4ERBX&quot;,
+        &quot;platformRoleName&quot;: &quot;Junction Administratorr&quot;,
+        &quot;platformRoleDesc&quot;: &quot;Platform Administrator Role&quot;,
+        &quot;platformRoleStatus&quot;: &quot;I&quot;,
+        &quot;platformRoleCode&quot;: &quot;G6CUR2VUCETERNF&quot;,
+        &quot;platformRoleType&quot;: &quot;A&quot;,
+        &quot;menus&quot;: [
+        ],
+        &quot;createdOn&quot;: &quot;2025-07-12T07:03:58.974415+00:00&quot;,
+        &quot;updatedOn&quot;: &quot;2025-07-12T07:04:55.580053+00:00&quot;,
+        &quot;createdBy&quot;: &quot;USER02ZBHVR3UI5ZFB3UVM9PUA4RDG&quot;,
+        &quot;updatedBy&quot;: &quot;USER02ZBHVR3UI5ZFB3UVM9PUA4RDG&quot;
+      }
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.PlatformRoleDetail.success == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def message = response.data.PlatformRoleDetail.message</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print message</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>16:54:27.579 [print] success 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.403</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Invalid PlatformRole ID</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-15" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-16" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">def platformRoleId = 'PRLE04CV9JMCC1G9U52NV16M4HBJ09'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>16:54:27.466 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def variables = { platformRoleId: '#(platformRoleId)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def query = karate.read('classpath:Settings/AdminRole/Graphql/RoleDetail.gql')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print query</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>16:54:27.477 [print] # platform-role-detail.gql
+query PlatformRoleDetail($platformRoleId: String!) {
+  PlatformRoleDetail(query: { platformRoleId: $platformRoleId }) {
+    success
+    message
+    developerMessage
+    result {
+      platformRoleId
+      platformRoleName
+      platformRoleDesc
+      platformRoleStatus
+      platformRoleCode
+      platformRoleType
+      menus {
+        menuId
+        menuName
+      }
+      createdOn
+      updatedOn
+      createdBy
+      updatedBy
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request { query: '#(query)', variables: '#(variables)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.370</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>16:54:27.486 request:
+1 &gt; POST https://sbadminv3.mzapi.mezzofy.com/iam
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 573
+1 &gt; Host: sbadminv3.mzapi.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;# platform-role-detail.gql\nquery PlatformRoleDetail($platformRoleId: String!) {\n  PlatformRoleDetail(query: { platformRoleId: $platformRoleId }) {\n    success\n    message\n    developerMessage\n    result {\n      platformRoleId\n      platformRoleName\n      platformRoleDesc\n      platformRoleStatus\n      platformRoleCode\n      platformRoleType\n      menus {\n        menuId\n        menuName\n      }\n      createdOn\n      updatedOn\n      createdBy\n      updatedBy\n    }\n  }\n}\n&quot;,&quot;variables&quot;:{&quot;platformRoleId&quot;:&quot;PRLE04CV9JMCC1G9U52NV16M4HBJ09&quot;}}
+
+16:54:27.847 response time in milliseconds: 361
+1 &lt; 200
+1 &lt; Date: Fri, 01 Aug 2025 11:24:27 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 157
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: 3767bea3-c375-48a1-8e39-590feaf51e5c
+1 &lt; x-amzn-Remapped-content-length: 157
+1 &lt; x-amz-apigw-id: On6M4HnrSQ0ELBg=
+1 &lt; X-Amzn-Trace-Id: Root=1-688ca3eb-6bc1e35865c0b2020e53f2e6;Parent=68453b7bca168319;Sampled=0;Lineage=1:6370592a:0
+{&quot;data&quot;: {&quot;PlatformRoleDetail&quot;: {&quot;success&quot;: false, &quot;message&quot;: &quot;Platform Role not Found!.&quot;, &quot;developerMessage&quot;: &quot;Platform Role not Found!.&quot;, &quot;result&quot;: null}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>16:54:27.849 [print] {
+  &quot;data&quot;: {
+    &quot;PlatformRoleDetail&quot;: {
+      &quot;success&quot;: false,
+      &quot;message&quot;: &quot;Platform Role not Found!.&quot;,
+      &quot;developerMessage&quot;: &quot;Platform Role not Found!.&quot;,
+      &quot;result&quot;: null
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.PlatformRoleDetail.success == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def message = response.data.PlatformRoleDetail.message</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print message</span>
+
+  <span class="lead-duration duration">0.027</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>16:54:27.877 [print] Platform Role not Found!. 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.324</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-22">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Empty PlatformRole ID</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-22" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-23">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-23" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">def platformRoleId = ''</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>16:54:27.584 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def variables = { platformRoleId: '#(platformRoleId)' }</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def query = karate.read('classpath:Settings/AdminRole/Graphql/RoleDetail.gql')</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print query</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>16:54:27.603 [print] # platform-role-detail.gql
+query PlatformRoleDetail($platformRoleId: String!) {
+  PlatformRoleDetail(query: { platformRoleId: $platformRoleId }) {
+    success
+    message
+    developerMessage
+    result {
+      platformRoleId
+      platformRoleName
+      platformRoleDesc
+      platformRoleStatus
+      platformRoleCode
+      platformRoleType
+      menus {
+        menuId
+        menuName
+      }
+      createdOn
+      updatedOn
+      createdBy
+      updatedBy
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request { query: '#(query)', variables: '#(variables)' }</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.302</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>16:54:27.607 request:
+1 &gt; POST https://sbadminv3.mzapi.mezzofy.com/iam
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 543
+1 &gt; Host: sbadminv3.mzapi.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;# platform-role-detail.gql\nquery PlatformRoleDetail($platformRoleId: String!) {\n  PlatformRoleDetail(query: { platformRoleId: $platformRoleId }) {\n    success\n    message\n    developerMessage\n    result {\n      platformRoleId\n      platformRoleName\n      platformRoleDesc\n      platformRoleStatus\n      platformRoleCode\n      platformRoleType\n      menus {\n        menuId\n        menuName\n      }\n      createdOn\n      updatedOn\n      createdBy\n      updatedBy\n    }\n  }\n}\n&quot;,&quot;variables&quot;:{&quot;platformRoleId&quot;:&quot;&quot;}}
+
+16:54:27.907 response time in milliseconds: 299
+1 &lt; 200
+1 &lt; Date: Fri, 01 Aug 2025 11:24:27 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 170
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: 9381e0a1-33f9-467b-8bae-7241f0d4fb59
+1 &lt; x-amzn-Remapped-content-length: 170
+1 &lt; x-amz-apigw-id: On6M5FHQyQ0EDOg=
+1 &lt; X-Amzn-Trace-Id: Root=1-688ca3eb-2aa379d356512e9025ba9cfb;Parent=51660761a34e9280;Sampled=0;Lineage=1:6370592a:0
+{&quot;data&quot;: {&quot;PlatformRoleDetail&quot;: {&quot;success&quot;: false, &quot;message&quot;: &quot;platformRoleId is missing&quot;, &quot;developerMessage&quot;: &quot;platformRoleId cannot be null or empty&quot;, &quot;result&quot;: null}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details">
+        <pre>16:54:27.909 [print] {
+  &quot;data&quot;: {
+    &quot;PlatformRoleDetail&quot;: {
+      &quot;success&quot;: false,
+      &quot;message&quot;: &quot;platformRoleId is missing&quot;,
+      &quot;developerMessage&quot;: &quot;platformRoleId cannot be null or empty&quot;,
+      &quot;result&quot;: null
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.PlatformRoleDetail.success == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def message = response.data.PlatformRoleDetail.message</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print message</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>16:54:27.910 [print] platformRoleId is missing 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.305</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-29">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Blank Space PlatformRole ID</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-29" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-30">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-30" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">def platformRoleId = '                              '</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details">
+        <pre>16:54:27.882 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def variables = { platformRoleId: '#(platformRoleId)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def query = karate.read('classpath:Settings/AdminRole/Graphql/RoleDetail.gql')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print query</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>16:54:27.887 [print] # platform-role-detail.gql
+query PlatformRoleDetail($platformRoleId: String!) {
+  PlatformRoleDetail(query: { platformRoleId: $platformRoleId }) {
+    success
+    message
+    developerMessage
+    result {
+      platformRoleId
+      platformRoleName
+      platformRoleDesc
+      platformRoleStatus
+      platformRoleCode
+      platformRoleType
+      menus {
+        menuId
+        menuName
+      }
+      createdOn
+      updatedOn
+      createdBy
+      updatedBy
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request { query: '#(query)', variables: '#(variables)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.299</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-33">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-33" class="collapse collapsable-details">
+        <pre>16:54:27.890 request:
+1 &gt; POST https://sbadminv3.mzapi.mezzofy.com/iam
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 573
+1 &gt; Host: sbadminv3.mzapi.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;# platform-role-detail.gql\nquery PlatformRoleDetail($platformRoleId: String!) {\n  PlatformRoleDetail(query: { platformRoleId: $platformRoleId }) {\n    success\n    message\n    developerMessage\n    result {\n      platformRoleId\n      platformRoleName\n      platformRoleDesc\n      platformRoleStatus\n      platformRoleCode\n      platformRoleType\n      menus {\n        menuId\n        menuName\n      }\n      createdOn\n      updatedOn\n      createdBy\n      updatedBy\n    }\n  }\n}\n&quot;,&quot;variables&quot;:{&quot;platformRoleId&quot;:&quot;                              &quot;}}
+
+16:54:28.187 response time in milliseconds: 296
+1 &lt; 200
+1 &lt; Date: Fri, 01 Aug 2025 11:24:28 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 170
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: 395bb533-8570-4fac-bb03-ce01e160e7cd
+1 &lt; x-amzn-Remapped-content-length: 170
+1 &lt; x-amz-apigw-id: On6M8Fb8SQ0EYKA=
+1 &lt; X-Amzn-Trace-Id: Root=1-688ca3ec-09870747431287fa087f608d;Parent=0f96284960536fcb;Sampled=0;Lineage=1:6370592a:0
+{&quot;data&quot;: {&quot;PlatformRoleDetail&quot;: {&quot;success&quot;: false, &quot;message&quot;: &quot;platformRoleId is missing&quot;, &quot;developerMessage&quot;: &quot;platformRoleId cannot be null or empty&quot;, &quot;result&quot;: null}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-34">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-34" class="collapse collapsable-details">
+        <pre>16:54:28.189 [print] {
+  &quot;data&quot;: {
+    &quot;PlatformRoleDetail&quot;: {
+      &quot;success&quot;: false,
+      &quot;message&quot;: &quot;platformRoleId is missing&quot;,
+      &quot;developerMessage&quot;: &quot;platformRoleId cannot be null or empty&quot;,
+      &quot;result&quot;: null
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.PlatformRoleDetail.success == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def message = response.data.PlatformRoleDetail.message</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print message</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-35">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-35" class="collapse collapsable-details">
+        <pre>16:54:28.190 [print] platformRoleId is missing 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

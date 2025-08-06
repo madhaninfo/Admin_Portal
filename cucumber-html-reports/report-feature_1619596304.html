@@ -1,0 +1,5451 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: src/test/java/Admin_otp/AdminLogin.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Admin-LoginAPI</td>
+      <td>13 May 2025, 17:20</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">src/test/java/Admin_otp/AdminLogin.feature</td>
+          <td      class="passed"    >12</td>
+          <td      class="failed"    >12</td>
+          <td     class="skipped"   >72</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">96</td>
+
+          <td >0</td>
+          <td  class="failed"    >12</td>
+          <td class="total">12</td>
+
+          <td class="duration" data-value="142616806">0.142</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">src/test/java/Admin_otp/AdminLogin.feature</span>
+
+
+</div>
+
+        <div class="description indention">Send GraphQL mutation using external JSON</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.064</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">invalid otp code</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>17:20:43.891 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.064</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>js</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}17:20:43.974 src/test/java/Admin_otp/AdminLogin.feature:8
+And request
+&quot;&quot;&quot;
+mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}
+&quot;&quot;&quot;
+js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminEmailService.success == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def userId = response.data.AdminEmailService.result.UserID</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'User ID from EmailService:', userId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.005</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-6">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Empty otp code</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-6" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-7">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-7" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>17:20:43.991 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-9">
+          <a>js</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}17:20:44.003 src/test/java/Admin_otp/AdminLogin.feature:8
+And request
+&quot;&quot;&quot;
+mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}
+&quot;&quot;&quot;
+js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminEmailService.success == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def userId = response.data.AdminEmailService.result.UserID</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'User ID from EmailService:', userId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.014</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-11">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Blank Space otp code</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-12">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>17:20:44.012 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.013</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-14">
+          <a>js</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}17:20:44.039 src/test/java/Admin_otp/AdminLogin.feature:8
+And request
+&quot;&quot;&quot;
+mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}
+&quot;&quot;&quot;
+js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminEmailService.success == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def userId = response.data.AdminEmailService.result.UserID</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'User ID from EmailService:', userId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.017</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-16">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Null otp code</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-17">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>17:20:44.063 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.017</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-19">
+          <a>js</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}17:20:44.084 src/test/java/Admin_otp/AdminLogin.feature:8
+And request
+&quot;&quot;&quot;
+mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}
+&quot;&quot;&quot;
+js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminEmailService.success == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def userId = response.data.AdminEmailService.result.UserID</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'User ID from EmailService:', userId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.015</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-21">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">alerady used otp code</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-21" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-22">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-22" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>17:20:44.110 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.015</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-24">
+          <a>js</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}17:20:44.128 src/test/java/Admin_otp/AdminLogin.feature:8
+And request
+&quot;&quot;&quot;
+mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}
+&quot;&quot;&quot;
+js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminEmailService.success == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def userId = response.data.AdminEmailService.result.UserID</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'User ID from EmailService:', userId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.003</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-26">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">4 Invalid User ID</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-26" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-27">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-27" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>17:20:44.141 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-29">
+          <a>js</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}17:20:44.149 src/test/java/Admin_otp/AdminLogin.feature:8
+And request
+&quot;&quot;&quot;
+mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}
+&quot;&quot;&quot;
+js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminEmailService.success == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def userId = response.data.AdminEmailService.result.UserID</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'User ID from EmailService:', userId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.003</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-31">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">5 Empty User ID</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-31" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-32">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-32" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-33">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-33" class="collapse collapsable-details">
+        <pre>17:20:44.159 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-34">
+          <a>js</a>
+      </div>
+      <div id="msg-34" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-35">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-35" class="collapse collapsable-details">
+        <pre>mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}17:20:44.167 src/test/java/Admin_otp/AdminLogin.feature:8
+And request
+&quot;&quot;&quot;
+mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}
+&quot;&quot;&quot;
+js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminEmailService.success == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def userId = response.data.AdminEmailService.result.UserID</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'User ID from EmailService:', userId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.003</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-36">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">5 Empty User ID</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-36" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-37">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-37" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-38">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-38" class="collapse collapsable-details">
+        <pre>17:20:44.178 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-39">
+          <a>js</a>
+      </div>
+      <div id="msg-39" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-40">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-40" class="collapse collapsable-details">
+        <pre>mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}17:20:44.187 src/test/java/Admin_otp/AdminLogin.feature:8
+And request
+&quot;&quot;&quot;
+mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}
+&quot;&quot;&quot;
+js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminEmailService.success == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def userId = response.data.AdminEmailService.result.UserID</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'User ID from EmailService:', userId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.003</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-41">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Null Value  User ID</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-41" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-42">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-42" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-43">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-43" class="collapse collapsable-details">
+        <pre>17:20:44.195 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-44">
+          <a>js</a>
+      </div>
+      <div id="msg-44" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-45">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-45" class="collapse collapsable-details">
+        <pre>mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}17:20:44.201 src/test/java/Admin_otp/AdminLogin.feature:8
+And request
+&quot;&quot;&quot;
+mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}
+&quot;&quot;&quot;
+js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminEmailService.success == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def userId = response.data.AdminEmailService.result.UserID</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'User ID from EmailService:', userId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.003</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-46">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">4 Invalid User ID and Invalid otp Code</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-46" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-47">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-47" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-48">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-48" class="collapse collapsable-details">
+        <pre>17:20:44.210 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-49">
+          <a>js</a>
+      </div>
+      <div id="msg-49" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-50">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-50" class="collapse collapsable-details">
+        <pre>mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}17:20:44.217 src/test/java/Admin_otp/AdminLogin.feature:8
+And request
+&quot;&quot;&quot;
+mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}
+&quot;&quot;&quot;
+js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminEmailService.success == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def userId = response.data.AdminEmailService.result.UserID</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'User ID from EmailService:', userId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.003</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-51">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">4 Empty User ID  otp Code</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-51" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-52">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-52" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-53">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-53" class="collapse collapsable-details">
+        <pre>17:20:44.228 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-54">
+          <a>js</a>
+      </div>
+      <div id="msg-54" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-55">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-55" class="collapse collapsable-details">
+        <pre>mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}17:20:44.234 src/test/java/Admin_otp/AdminLogin.feature:8
+And request
+&quot;&quot;&quot;
+mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}
+&quot;&quot;&quot;
+js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminEmailService.success == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def userId = response.data.AdminEmailService.result.UserID</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'User ID from EmailService:', userId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.003</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-56">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">4 Empty User ID  otp Code</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-56" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-57">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-57" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url BaseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-58">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-58" class="collapse collapsable-details">
+        <pre>17:20:44.245 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-59">
+          <a>js</a>
+      </div>
+      <div id="msg-59" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-60">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-60" class="collapse collapsable-details">
+        <pre>mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}17:20:44.250 src/test/java/Admin_otp/AdminLogin.feature:8
+And request
+&quot;&quot;&quot;
+mutation {
+   AdminLogin(input: {
+       userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+       otpCode: 294439
+   }){
+       success
+       message
+       developerMessage
+       result{
+           userData{
+               userId
+               userName
+               userEmail
+               userStatus
+               createdBy
+               createdOn
+               updatedBy
+               updatedOn
+           }
+       }
+   }
+}
+&quot;&quot;&quot;
+js failed:
+&gt;&gt;&gt;&gt;
+01: mutation {
+02:    AdminLogin(input: {
+03:        userId: &quot;b6ce40b2-5f0f-4895-a050-d0e58ee823e8&quot;
+04:        otpCode: 294439
+05:    }){
+06:        success
+07:        message
+08:        developerMessage
+09:        result{
+10:            userData{
+11:                userId
+12:                userName
+13:                userEmail
+14:                userStatus
+15:                createdBy
+16:                createdOn
+17:                updatedBy
+18:                updatedOn
+19:            }
+20:        }
+21:    }
+22: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected ; but found {
+mutation {
+         ^
+Unnamed:2:19 Expected , but found :
+   AdminLogin(input: {
+                   ^
+Unnamed:5:3 Expected eof but found }
+   }){
+   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:544)
+
+src/test/java/Admin_otp/AdminLogin.feature:8
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.AdminEmailService.success == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def userId = response.data.AdminEmailService.result.UserID</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'User ID from EmailService:', userId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
